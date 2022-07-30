@@ -10,7 +10,7 @@ function Slide({ data }) {
   let dispatch = useDispatch();
   let inputKeyword = useSelector(state => state.inputKeyword);
   const SearchLog = programId => {
-    axios.post(`${BASE_URL}/search/${programId}`);
+    axios.post(`${BASE_URL}/searchlog/${programId}`);
   };
 
   return (
